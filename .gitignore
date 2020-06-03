@@ -4,3 +4,4 @@
 */mime.ps1
 *.DS_Store
 .env
+yarn.lock

@@ -1,16 +1,8 @@
-//1. Create a new React app.
-import React from 'react';
-import ReactDOM from 'react-dom';
-import Heading from './heading';
-import Note from './note'
-import Footer from './footer';
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./components/App";
+
+ReactDOM.render(<App  />, document.getElementById("root"));
 
 
-var app = <div>
-{Heading()}
-{Note()}
-{Footer()}
-</div>
-
-ReactDOM.render(app,document.getElementById('root') );
-
+//4. Import the contacts.js file to create card components.

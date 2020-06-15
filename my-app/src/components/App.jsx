@@ -22,10 +22,6 @@ function App() {
                     {Contacts.map(createCard)}
                 </div>
           </div>
-               
-      
-
-           
 }
 
 export default App;

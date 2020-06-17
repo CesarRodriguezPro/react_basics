@@ -1,22 +1,17 @@
 import React from "react";
-import login from './login';
+import Login from './login';
 
 var isLogginIn = false;
+const currentTime = new Date().getHours();
+console.log(currentTime);
 
-function renderConditional() {
-  if (isLogginIn) {
-    return ( <h1> Hello </h1>)
-    }
-    else {
-      return <login />
-      }
-    }
+function App() {
+      return <div className = "container" >  
 
-    function App() {
-      return (<div className = "container" > {
-          renderConditional()
-        } </div>
-      );
+      // two difference way to use this function please use code
+        {isLogginIn === true ? <h1> hello </h1> : <Login />}
+        {currentTime > 12 && <h1>Why are you still working </h1>}
+      </div>
     }
 
     export default App;

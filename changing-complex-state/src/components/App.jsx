@@ -8,8 +8,7 @@ function App() {
   });
 
   function handleChange(event) {
-    const {value,name} = event.target;
-    
+    const {value,name} = event.target; 
     setFullName(previousValue => {
       if (name === 'firstName') {
         return {
